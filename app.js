@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const todoroutes = require('./routes/todo.js');
+const todoroutes = require('./routes/todos.js');
 
 
 app.use(express.json());

@@ -24,5 +24,4 @@ router.post('/', (req, res)=>{
     res.status(201).json(newTodo);    
 });
 
-
 module.exports = router;

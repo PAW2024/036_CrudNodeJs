@@ -17,7 +17,7 @@ router.post('/', (req, res)=>{
     const newTodo = {
         id: todos.length + 1,
         task: req.body.task,
-        completed: false
+        completed: false,
 
     };
     todos.push(newTodo);

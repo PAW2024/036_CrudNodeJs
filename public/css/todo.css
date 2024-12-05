@@ -1,0 +1,286 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;  /* Hilangkan margin untuk centering */
+    padding: 0;
+    flex-grow: 1;
+}
+.navbar-signout .nav-link {
+    list-style: none;
+    margin-left: auto;  /* Memindahkan Sign Out ke kanan */
+    color: #FFFFFF;
+    text-decoration: none; /* Hilangkan underline */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+.navbar-signout .nav-link:hover {
+    background-color: #6C63FF; /* Warna saat hover */
+    border-radius: 5px;
+}
+
+.navbar-menu .nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-menu .nav-link:hover,
+.navbar-menu .nav-link.active {
+    background-color: #6C63FF;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.btn-add-todo {
+    padding: 10px 20px;
+    background-color: #6C63FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-todo:hover {
+    background-color: #5A52DB;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-description {
+    font-size: 5rem;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #FFD700;
+    color: #333333;
+}
+
+.btn-edit:hover {
+    background-color: #FFC107;
+}
+
+.btn-delete {
+    background-color: #FF6347;
+    color: #FFFFFF;
+}
+
+.btn-delete:hover {
+    background-color: #FF4500;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.btn-save {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-save {
+    background-color: #28a745; /* Warna hijau */
+    color: white; /* Warna teks */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-color: #218838; /* Warna hijau lebih gelap saat hover */
+}
+
+.btn-cancel {
+    background-color: #e11313;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background-color: #ca6c4d;
+}

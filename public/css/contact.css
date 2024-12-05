@@ -1,0 +1,131 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;  /* Hilangkan margin untuk centering */
+    padding: 0;
+    flex-grow: 1;
+}
+
+/* Untuk memindahkan signout ke kanan */
+.navbar-signout .nav-link {
+    list-style: none;
+    margin-left: auto;  /* Memindahkan Sign Out ke kanan */
+    color: #FFFFFF;
+    text-decoration: none; /* Hilangkan underline */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+.navbar-signout .nav-link:hover {
+    background-color: #6C63FF; /* Warna saat hover */
+    border-radius: 5px;
+}
+
+.navbar-menu .nav-link  {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-menu .nav-link:hover,
+.navbar-menu .nav-link.active .navbar-signout {
+    background-color: #6C63FF;
+    border-radius: 5px;
+}
+
+/* Form styling */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

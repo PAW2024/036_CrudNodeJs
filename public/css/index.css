@@ -1,0 +1,150 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;  /* Hilangkan margin untuk centering */
+    padding: 0;
+    flex-grow: 1;
+}
+
+/* Untuk memindahkan signout ke kanan */
+.navbar-signout .nav-link {
+    list-style: none;
+    margin-left: auto;  /* Memindahkan Sign Out ke kanan */
+    color: #FFFFFF;
+    text-decoration: none; /* Hilangkan underline */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+.navbar-signout .nav-link:hover {
+    background-color: #6C63FF; /* Warna saat hover */
+    border-radius: 5px;
+}
+
+.navbar-menu .nav-link  {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-menu .nav-link:hover,
+.navbar-menu .nav-link.active .navbar-signout {
+    background-color: #6C63FF;
+    border-radius: 5px;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    margin: 50px 0;
+    
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #777;
+}
+
+.hero-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.hero-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Features section styles */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    background-color: #a9a9a9;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+

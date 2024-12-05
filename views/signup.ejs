@@ -1,13 +1,27 @@
-<h1>Signup</h1>
-<form action="/signup" method="POST">
-    <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" name="username" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Path ke CSS -->
+    <link rel="stylesheet" href="/css/singup.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <!-- Path ke logo -->
+            <img src="/images/dedy.jpg" alt="Logo" class="logo">
+            <h1 class="title">Sign Up</h1>
+            <p class="subtitle">Welcome to the jungle</p>
+            <form action="/signup" method="POST">
+                <input type="text" name="username" placeholder="Username" class="form-input" required>
+                <input type="password" name="password" placeholder="Password" class="form-input" required>
+                <p class="help-text">Lorem ipsum dolor? <a href="#">Lorem ipsum</a></p>
+                <button type="submit" class="btn">Sign up</button>
+                <p>sudah punya akun? Login <a href="/login">disini</a>.</p>
+            </form>
+        </div>
     </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="password" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Signup</button>
-</form>
-<p>sudah punya akun? <a href="/login">Login di sini</a>.</p>
+</body>
+</html>

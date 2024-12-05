@@ -1,81 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/contact.css">
-</head>
-<body>
-
-    <!-- Navbar Section -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="#" class="navbar-logo">
-                <img src="images/dedy.jpg" alt="Profile Picture" class="profile-picture">
-            </a>
-            <ul class="navbar-menu">
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/contact" class="nav-link">Contact</a></li>
-                <li><a href="/todo" class="nav-link">Todo</a></li>
-               
-            </ul>
-            <ul class="navbar-signout">
-                <li><a href="/login" class="nav-link">
-                        <i class="fas fa-sign-out-alt"></i> Sign Out
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
 
 
-    <!-- Main Content Section -->
-    <div class="container">
-        <h1>Contact Us</h1>
-        <form>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" class="form-control" id="phone" required pattern="[0-9]{10,13}" placeholder="Enter phone number">
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" class="form-control" id="subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea class="form-control" id="message" rows="5" required></textarea>
-            </div>
-            <!-- Atribut Baru: Alamat -->
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <textarea class="form-control" id="address" rows="3" required placeholder="Enter your address"></textarea>
-            </div>
-            <!-- Atribut Baru: Tanggal Pertemuan -->
-            <div class="form-group">
-                <label for="appointment">Meeting Date:</label>
-                <input type="date" class="form-control" id="appointment" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="navbar-logo">
+            <img src="images/dedy.jpg" alt="Profile Picture" class="profile-picture">
+        </a>
+        <ul class="navbar-menu">
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/contact" class="nav-link">Contact</a></li>
+            <li><a href="/todo" class="nav-link">Todo</a></li>
+           
+        </ul>
+        <ul class="navbar-signout">
+            <li><a href="/login" class="nav-link">
+                    <i class="fas fa-sign-out-alt"></i> Sign Out
+                </a>
+            </li>
+        </ul>
     </div>
+</nav>
 
-   
-   <!-- Footer -->
-    <footer class="footer">
-        <p>© Copyright 2024 Farras.</p>
-    </footer>
 
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="css/contact.css">
-</body>
-</html>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" required pattern="[0-9]{10,13}" placeholder="Enter phone number">
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" class="form-control" id="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <!-- Atribut Baru: Alamat -->
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea class="form-control" id="address" rows="3" required placeholder="Enter your address"></textarea>
+        </div>
+        <!-- Atribut Baru: Tanggal Pertemuan -->
+        <div class="form-group">
+            <label for="appointment">Meeting Date:</label>
+            <input type="date" class="form-control" id="appointment" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+
+<footer class="footer">
+    <p>© Copyright 2024 Farras.</p>
+</footer>
+
+
+
